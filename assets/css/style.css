@@ -2,10 +2,11 @@
 
 * {
   /* Primary */
-  --lightred: hsl(0, 100%, 67%);
-  --orangeyyellow: hsl(39, 100%, 56%);
-  --greenteal: hsl(166, 100%, 37%);
-  --cobaltblue: hsl(234, 85%, 45%);
+  /* --lightred: hsla(0, 100%, 67%, 50%); */
+  --lightred: 0, 100%, 67%;
+  --orangeyyellow: 39, 100%, 56%;
+  --greenteal: 166, 100%, 37%;
+  --cobaltblue: 234, 85%, 45%;
 
   /* Gradients */
   --background-gradient: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
@@ -15,19 +16,19 @@
   --white: hsl(0, 0%, 100%);
   --paleblue: hsl(221, 100%, 96%);
   --lightlavender: hsl(241, 100%, 89%);
-  --darkgrayblue: hsl(224, 30%, 27%);
+  --darkgrayblue: 224, 30%, 27%;
 }
 
-body {
+* {
   font-family: 'Hanken Grotesk', sans-serif;
   margin: 0;
 }
 
 main {
-  padding-top: 10px ;
+  padding-top: 10px;
   background: var(--background-gradient);
   border-radius: 0 0 32px 32px;
-  height: 95vw;
+  height: 92vw;
   text-align: center;
   box-shadow: 0px 30px 60px rgba(61, 108, 236, 0.15);
 }
@@ -54,13 +55,37 @@ h3 {
   margin: 20px;
 }
 
+h4 {
+  margin: 0 auto;
+  font-weight: 500;
+}
+
+body > h3 {
+  color: var(--darkgrayblue);
+}
+
 p {
   font-size: 16px;
   font-weight: 500;
-  color: var(--lightlavender);  
+  color: var(--lightlavender);
   margin: 0px auto;
-  width: 75vw;
+  width: 70vw;
   text-align: center;
+}
+
+button {
+  width: 85vw;
+  margin: 20px auto;
+  background-color: hsl(var(--darkgrayblue));
+  border-radius: 128px;
+  display: block;
+}
+
+button > h3 {
+  color: var(--white);
+  margin: 10px auto;
+  padding: 4px
+  
 
 }
 
@@ -73,7 +98,68 @@ p {
 }
 
 #circle > p {
-    width: 20vw;
+  width: 20vw;
+}
+
+.category {
+  margin: 0 auto;
+  width: 80vw;
+  border-radius: 12px;
+  margin: 12px auto;
+  padding: 18px 12px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.category_name {
+  width: 30vw;
+  margin: 0 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#reaction {
+  background-color: hsla(var(--lightred), 10%);
+}
+
+#reaction h4{
+  color: hsl(var(--lightred));
+}
+
+#memory {
+  background-color: hsla(var(--orangeyyellow), 10%);
+}
+
+#memory h4{
+  color: hsl(var(--orangeyyellow));
+}
+
+#verbal {
+  background-color: hsla(var(--greenteal), 10%);
+}
+
+#verbal h4{
+  color: hsl(var(--greenteal));
+}
+
+#visual {
+  background-color: hsla(var(--cobaltblue), 10%);
+}
+
+#visual h4{
+  color: hsl(var(--cobaltblue));
+}
+
+.score {
+  display: inline;
+  width: 20vw;
+  margin: 0 10px;
+  color: hsla(var(--darkgrayblue), 50%);
+}
+
+#reaction_score, #memory_score, #verbal_score, #visual_score {
+  color: hsl(var(--darkgrayblue));
 }
 
 .attribution {
