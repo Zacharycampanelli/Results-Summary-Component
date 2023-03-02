@@ -9,12 +9,13 @@
 
     <title>Frontend Mentor | Results summary component</title>
     <link rel="stylesheet" href="./assets/css/style.css" />
+
   </head>
   <body>
     <main>
       <h3>Your Result</h3>
       <div id="circle">
-        <h1>76</h1>
+        <h1 id="final_score"></h1>
         <p>of 100</p>
       </div>
       <h2>Great</h2>
@@ -28,28 +29,28 @@
           <img src="./assets/images/icon-reaction.svg" />
           <h4>Reaction</hh4>
         </div>
-        <p class="score"><span id="reaction_score">80</span> / 100</p>
+        <p class="score"><span id="reaction_score"></span> / 100</p>
       </div>
       <div class="category" id="memory">
         <div class="category_name">
         <img src="./assets/images/icon-memory.svg" />
         <h4>Memory</h4>
         </div>
-        <p class="score"><span id="memory_score">92</span> / 100</p>
+        <p class="score"><span id="memory_score"></span> / 100</p>
       </div>
       <div class="category" id="verbal">
         <div class="category_name">
         <img src="./assets/images/icon-verbal.svg" />
         <h4>Verbal</h4>
       </div>
-      <p class="score"><span id="verbal_score">61</span> / 100</p>
+      <p class="score"><span id="verbal_score"></span> / 100</p>
       </div>
       <div class="category" id="visual">
         <div class="category_name">
         <img src="./assets/images/icon-visual.svg" />
         <h4>Visual</h4>
       </div> 
-      <p class="score"><span id="visual_score">72</span> / 100</p>
+      <p class="score"><span id="visual_score"></span> / 100</p>
       </div>
       <button><h3>Continue</h3></button>
     </body>
@@ -58,5 +59,8 @@
       Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. Coded by
       <a href="#">Zachary Campanelli</a>.
     </div>
+    
+    <script  src="./assets/js/script.js"></script>
+    
   </body>
 </html>
