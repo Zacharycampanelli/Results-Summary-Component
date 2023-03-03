@@ -24,6 +24,10 @@
   margin: 0;
 }
 
+body {
+  background-color: var(--paleblue);
+}
+
 main {
   padding-top: 10px;
   background: var(--background-gradient);
@@ -201,10 +205,6 @@ button > h3 {
 }
 
 @media only screen and (min-width: 801px) {
-  body {
-    display: flex;
-  }
-
   main {
     height: 512px;
     width: 368px;
@@ -212,7 +212,7 @@ button > h3 {
     padding-top: 0;
   }
 
-  h1{
+  h1 {
     margin-top: 46px;
   }
 
@@ -239,8 +239,13 @@ button > h3 {
     margin: 8px;
   }
 
-  button:hover, button:focus {
+  button:hover,
+  button:focus {
     background: var(--background-gradient);
+  }
+
+  .container {
+    display: flex;
   }
 
   .card {
@@ -263,12 +268,6 @@ button > h3 {
     width: 368px;
   }
 
-  .attribution {
-    position: absolute;
-    bottom: -25%;
-    left: -8%;
-  }
-
   #circle {
     margin: 5px auto;
     width: 200px;
@@ -281,7 +280,13 @@ button > h3 {
 }
 
 @media only screen and (min-width: 1025px) {
-  /* big landscape tablets, laptops, and desktops */
+  button {
+    width: 28vw;
+  }
+
+  .category {
+    width: 25vw;
+  }
 }
 
 @media only screen and (min-width: 1281px) {
@@ -295,9 +300,41 @@ button > h3 {
 
   h3 {
     font-size: 24px;
+    margin: 36px 40px;
+  }
+
+  h4 {
+    font-size: 18px;
+    margin: auto;
+    margin-left: 10px;
   }
 
   p {
     font-size: 18px;
+    width: 17vw;
+  }
+
+  main > p {
+    margin-top: 14px;
+  }
+
+  button {
+    width: 22vw;
+  }
+
+  button > h3 {
+    margin: 9px;
+  }
+
+  .category {
+    width: 20vw;
+  }
+
+  #circle > p {
+    width: 10vw;
+  }
+
+  #reaction {
+    margin-top: -10px;
   }
 }
